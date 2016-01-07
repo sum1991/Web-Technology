@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+<div id ="remove" style="border: 4px solid rgb(0, 0, 0);width: 334px; margin-left: 483px;">    
+<form style ="text-align:center;" action="" name="myForm" onsubmit="" id="forecast" method="post">
+<p style ="display: inline-block;">Street Address:*</p>    
+ <input value="" style ="margin-left:33px;" type="text" name="stadd">
+  <br>
+<p style ="display: inline-block;">City:*</p>
+<input  value="" style ="margin-left:101px;" type="text" name="city">
+<br>
+ <p style ="display: inline-block;padding-right: 24px;">State:*</p> 
+<select style="margin-left: 83px;" name="state1">
+    <option value="None">Select Your State</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>      
+</select>
+<br>
+<p style ="display: inline-block;">Degree:*</p>
+    <div style="display: inline-block;margin-left: 86px;">
+<input type="radio" checked="checked" name="degree" value="us">Farenhiet
+<input type="radio"name = "degree" value="si"> Celsius<br>
+    </div>
+    <br>
+<input type="submit" value="Search">
+    
+<!--<input type="reset" onclick="ClearForm(this.form)" value="Reset">-->
+    <input  type="button" name="clear" value="Clear" onclick="clearForm(this.form);">
+
+   
+</form>
+    <p style="padding-left: 22px;"><i>*-Mandatory Fields</i></p>
+<p style="text-align:center;"><a  href="http://forecast.io/">Powered By Forecast.io</a> </p>
+    
+</div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</body>    
+    
+</html>
